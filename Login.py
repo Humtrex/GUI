@@ -10,7 +10,7 @@ class Login:
         self.contraseña = StringVar()
 
         
-        mainFrame = ttk.Frame(raiz, padding="10 10 25 25") 
+        mainFrame = ttk.Frame(raiz, padding="10 10 10 25") 
         mainFrame.grid(column=0, row=0) 
 
         usuarioEntry = ttk.Entry(mainFrame, textvariable=self.usuario) 
@@ -22,7 +22,7 @@ class Login:
         ttk.Label(mainFrame, text="Contraseña: ",padding=(5,10,5,10)).grid(column=0, row=1)
         
 
-        ttk.Button(mainFrame, text="Ingresar", command=self.ingresar()).grid(column=2, row=3)
+        ttk.Button(mainFrame, text="Ingresar", command=self.ingresar()).grid(column=2, row=3,sticky=E)
 
         usuarioEntry.focus()
 
