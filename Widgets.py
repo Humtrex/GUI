@@ -12,10 +12,10 @@ class Widgets:
         self.correo = StringVar()
         self.movil = StringVar()
 
-        mainFrame=ttk.Frame(raiz, padding="5 5 20 10")
+        mainFrame=ttk.Frame(raiz, padding="5 10 20 10")
         mainFrame.grid(column=0, row=0)
                 
-        datosFrame = ttk.Frame(mainFrame, padding="5 3 30 10",relief="sunken") 
+        datosFrame = ttk.Frame(mainFrame, padding="5 3 30 10",relief="raised") 
         datosFrame.grid(column=0, row=0,columnspan=2,rowspan=3)   
 
         nombreEntry = ttk.Entry(datosFrame, textvariable=self.nombre) 
@@ -35,7 +35,7 @@ class Widgets:
         ttk.Label(datosFrame, text="Correo: ",padding=(5,10,5,10)).grid(column=0, row=3)
         ttk.Label(datosFrame, text="Movil:",padding=(5,10,5,10)).grid(column=0, row=4) 
 
-        aficionesFrame = ttk.Frame(mainFrame,padding="5 3 15 15",relief="sunken")  
+        aficionesFrame = ttk.Frame(mainFrame,padding="5 3 15 15",relief="raised")  
         aficionesFrame.grid(column=0, row=4, columnspan=2)
         ttk.Label(aficionesFrame, text="Aficiones:",padding=(5,5,5,5)).grid(column=0, row=0)
         chkLeer = ttk.Checkbutton(aficionesFrame, text="Leer") 
